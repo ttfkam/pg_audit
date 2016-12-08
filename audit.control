@@ -1,0 +1,7 @@
+# audit extension
+# Miles Elam <miles@geekspeak.org>
+# No dependencies
+
+comment = 'audit insert, update, and delete on tables'
+default_version = '1.0.0'
+relocatable = true
