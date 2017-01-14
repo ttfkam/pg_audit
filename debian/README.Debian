@@ -1,0 +1,18 @@
+postgresql-audit for Debian
+------------------
+
+PostgreSQL extension providing audit tracking for tables via included
+trigger and supporting functions.
+
+Use "CREATE EXTENSION audit" to load into your database.
+
+To attach auditing to a table, execute the following:
+
+CREATE TRIGGER mytable_audit
+    AFTER INSERT OR DELETE OR UPDATE 
+    ON mytable
+    FOR EACH ROW
+    EXECUTE PROCEDURE audit();
+
+ -- Miles Elam <miles@geekspeak.org>  Sat, 14 Jan 2017 12:01:37 -0800
+
